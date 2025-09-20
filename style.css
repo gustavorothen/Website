@@ -1,8 +1,9 @@
 :root {
     --main-color: #FFFFFF;
     --black: #000000;
-    --grey: #D3D3D3;
-    --border: 0.1rem solid rgba(255,255,255,1)
+    --grey: #a0a0a0;
+    --darker-grey: #333
+    --border: 0.1rem solid var(--grey);
     font-size: 10px;
 }
 
@@ -13,7 +14,8 @@
     border: none;
     text-decoration: none;
     text-transform: capitalize;
-    transition: 0.2 linear;
+    transition: 0.2s linear;
+    font-family: "Poppins", sans-serif;
 }
 
 body {
@@ -43,9 +45,63 @@ section {
     padding-bottom: 1.5rem;
 }
 
-.navbar {
+.menu a {
     margin: 0 1rem;
     font-size: 1.8rem;
-    
-
+    font-weight: bold;
+    color:#000000
 }
+
+.menu a:hover {
+    color: var(--grey);
+    border-bottom: 0.1rem solid var(--border);
+    padding-bottom: 0.5rem;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.icones img {
+    cursor: pointer;
+}
+.icones img:hover {
+    width: 55px;
+    height: 55px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 3rem;
+    background-color: var(--grey);
+    color: var(--main-color);
+    font-size: 1.8rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.home-container {
+    background-position: center;
+    background-size: cover;
+}
+
+.home-container section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    height: 100vh;
+}
+
+.conteudo h3 {
+    font-size: 6rem;
+    color: var(--darker-grey);
+}
+
+.conteudo p {
+    font-size: 1.5rem;
+    font-weight: 100;
+    color: var(--black);
+    margin: 1rem 0;
+    line-height: 2
+}
+
