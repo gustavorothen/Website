@@ -1,107 +1,111 @@
 :root {
-    --main-color: #FFFFFF;
-    --black: #000000;
-    --grey: #a0a0a0;
-    --darker-grey: #333
-    --border: 0.1rem solid var(--grey);
-    font-size: 10px;
+  --main-color: #ffffff;
+  --black: #000000;
+  --grey: #a0a0a0;
+  --darker-grey: #333;
+  --border: 0.1rem solid var(--darker-grey);
+  font-size: 10px;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    outline: none;
-    border: none;
-    text-decoration: none;
-    text-transform: capitalize;
-    transition: 0.2s linear;
-    font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: 0.2s linear;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
-    background-color: var(--main-color);
+  background-color: var(--main-color);
 }
 
 section {
-    padding: 3 rem 2rem;
-    margin: 0 auto;
-    max-width: 1200px;
+  padding: 3 rem 2rem;
+  margin: 0 auto;
+  max-width: 1200px;
 }
 
 .header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 99;
-    border-bottom: var(--border);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  border-bottom: var(--border);
 }
 
 .header section {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 .menu a {
-    margin: 0 1rem;
-    font-size: 1.8rem;
-    font-weight: bold;
-    color:#000000
+  margin: 0 1rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #000000;
 }
 
 .menu a:hover {
-    color: var(--grey);
-    border-bottom: 0.1rem solid var(--border);
-    padding-bottom: 0.5rem;
-    font-weight: bold;
-    font-size: 2rem;
+  color: var(--grey);
+  border-bottom: 0.1rem solid var(--border);
+  padding-bottom: 0.5rem;
+  font-weight: bold;
+  font-size: 2rem;
 }
 
 .icones img {
-    cursor: pointer;
+  cursor: pointer;
 }
 .icones img:hover {
-    width: 55px;
-    height: 55px;
+  width: 55px;
+  height: 55px;
 }
 
 .btn {
-    display: inline-block;
-    padding: 1rem 3rem;
-    background-color: var(--grey);
-    color: var(--main-color);
-    font-size: 1.8rem;
-    border-radius: 0.5rem;
-    cursor: pointer;
-    margin-top: 1rem;
+  display: inline-block;
+  padding: 1rem 3rem;
+  background-color: var(--grey);
+  color: var(--main-color);
+  font-size: 1.8rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  margin-top: 2rem;
+  align-self: center;
 }
 
 .home-container {
-    background-position: center;
-    background-size: cover;
+  padding-top: 160px;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("img/bannerbp2.png") no-repeat center right;
+  background-size: contain;
 }
 
-.home-container section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    height: 100vh;
+.conteudo {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .conteudo h3 {
-    font-size: 6rem;
-    color: var(--darker-grey);
+  font-size: 6rem;
+  color: var(--darker-grey);
 }
 
 .conteudo p {
-    font-size: 1.5rem;
-    font-weight: 100;
-    color: var(--black);
-    margin: 1rem 0;
-    line-height: 2
+  font-size: 1.5rem;
+  font-weight: 100;
+  color: var(--black);
+  margin: 1rem 0;
+  line-height: 2;
 }
-
