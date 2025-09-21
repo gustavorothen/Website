@@ -86,8 +86,16 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url("img/bannerbp2.png") no-repeat center right;
-  background-size: contain;
+  flex-direction: column;
+}
+
+.banner-img {
+    width: 100%;
+    min-height: 60vh; 
+    object-fit: cover;
+    display: block;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
 }
 
 .conteudo {
@@ -97,15 +105,45 @@ section {
   align-items: center;
 }
 
-.conteudo h3 {
-  font-size: 6rem;
-  color: var(--darker-grey);
+.about {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 3rem;
+  padding: 4rem 2rem;
+  border-radius: 1rem;
+  padding-top: 160px;
 }
 
-.conteudo p {
-  font-size: 1.5rem;
-  font-weight: 100;
+.about-texto {
+  flex: 1;
   color: var(--black);
-  margin: 1rem 0;
-  line-height: 2;
+}
+
+.about-texto h1 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.about-texto p {
+  font-size: 1.6rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  text-align: justify;
+}
+
+.about-texto span {
+  color: var(--grey);
+}
+
+.about-img {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.about-img img {
+  max-width: 75%;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
 }
